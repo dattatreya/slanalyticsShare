@@ -30,7 +30,7 @@ public class SLAnaytics2 {
                 .headers(httpHeaders -> {
                     httpHeaders.set("accept","application/json");
                     httpHeaders.set("x-api-key","dummy_key");
-                    httpHeaders.setContentType(MediaType.APPLICATION_JSON);
+              //      httpHeaders.setContentType(MediaType.APPLICATION_JSON);
                 })
                 .contentType(MediaType.MULTIPART_FORM_DATA)
                 .body(BodyInserters.fromMultipartData(builder.build()))
